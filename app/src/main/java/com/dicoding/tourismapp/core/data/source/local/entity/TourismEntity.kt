@@ -14,6 +14,7 @@ data class TourismEntity(
     @NonNull
     @ColumnInfo(name = "tourismId")
     var tourismId: String,
+//
 
     @ColumnInfo(name = "name")
     var name: String,
