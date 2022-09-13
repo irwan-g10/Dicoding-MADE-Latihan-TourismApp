@@ -6,9 +6,8 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.dicoding.tourismapp.R
-import com.dicoding.tourismapp.core.data.source.local.entity.TourismEntity
-import com.dicoding.tourismapp.core.domain.model.Tourism
-import com.dicoding.tourismapp.core.ui.ViewModelFactory
+import com.dicoding.mylibrary.data.source.local.entity.TourismEntity
+import com.dicoding.mylibrary.domain.model.Tourism
 import com.dicoding.tourismapp.databinding.ActivityDetailTourismBinding
 import org.koin.android.viewmodel.ext.android.viewModel
 
