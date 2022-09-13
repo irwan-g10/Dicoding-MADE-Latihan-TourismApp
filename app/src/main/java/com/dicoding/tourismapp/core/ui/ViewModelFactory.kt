@@ -3,8 +3,6 @@ package com.dicoding.tourismapp.core.ui
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.dicoding.tourismapp.core.data.TourismRepository
-import com.dicoding.tourismapp.core.di.Injection
 import com.dicoding.tourismapp.core.domain.usecase.TourismUseCase
 import com.dicoding.tourismapp.detail.DetailTourismViewModel
 import com.dicoding.tourismapp.favorite.FavoriteViewModel
@@ -17,16 +15,16 @@ class ViewModelFactory private constructor(private val tourismUseCase: TourismUs
         @Volatile
         private var instance: ViewModelFactory? = null
 
-        fun getInstance(context: Context): ViewModelFactory =
-            instance
-                ?: synchronized(this) {
-                instance
-                    ?: ViewModelFactory(
-                        Injection.provideTourismUseCase(
-                            context
-                        )
-                    )
-            }
+//        fun getInstance(context: Context): ViewModelFactory =
+//            instance
+//                ?: synchronized(this) {
+//                instance
+//                    ?: ViewModelFactory(
+//                        Injection.provideTourismUseCase(
+//                            context
+//                        )
+//                    )
+//            }
     }
 
     @Suppress("UNCHECKED_CAST")
